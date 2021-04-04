@@ -1,5 +1,5 @@
 /*
-				***** LAYOUTS *****
+				***** LAYOUT LIQUIDO *****
 */
 
 body{
@@ -8,9 +8,11 @@ body{
 }
 
 #container{
-	width: 720px;
+	width: 85%;
 	margin: 0 auto;
 	background: #FFF;
+	min-width: 520px;
+	max-width: 1280px;
 }
 
 #marca{
@@ -21,14 +23,14 @@ body{
 }
 
 #conteudo{
-	width: 520px;
+	width: 75%;
 	float: right;
 }
 
 #navegacao{
-	width: 180px;
+	width: 23%;
 	float: left;
-	padding: 20px 0px;
+	padding: 5% 0px;
 	background: #d1d1d1;
 }
 
@@ -47,12 +49,12 @@ body{
 }
 
 #principal{
-	width: 320px;
+	width: 63%;
 	float: left;
 }
 
 #secundario{
-	width: 180px;
+	width: 34%;
 	float: right;
 	background: #d1d1d1;
 }
