@@ -142,15 +142,6 @@ Documentação Direções: https://www.w3schools.com/cssref/css3_pr_animation-di
 
 Documentação Transições: https://www.w3schools.com/css/css3_transitions.asp
 
-
-html{
-	z-index: 1;
-}
-
-p{
-	padding: 0;
-}
-
 #caixa{
 	color: #fff;
 	width: 200px;
