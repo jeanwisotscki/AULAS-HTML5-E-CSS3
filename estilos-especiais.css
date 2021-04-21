@@ -1,0 +1,177 @@
+/* BOX SIZING E BORDER RADIUS
+*********************************
+
+Documentação Box sizing: https://www.w3schools.com/cssref/css3_pr_box-sizing.asp 
+
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+*******************************/
+
+
+
+/* DEGRADÊS E TRANSPARÊNCIAS
+*******************************
+
+Documentação Transparências: https://www.w3schools.com/css/css3_colors.asp
+
+Documentação Degradês: https://www.w3schools.com/css/css3_gradients.asp
+
+
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: url(../imagens/camera.png);
+	background: linear-gradient(45deg, red, yellow, green, yellow, red);
+	background: radial-gradient(red, green, yellow)
+}
+
+#caixa h1{
+	background: rgba(255, 255, 255, 0.5);
+}
+ ********************************/
+
+
+
+ /* SOMBRAS
+*********************************
+ Documentação Sombras em Texto: https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+
+ Documentação Sombras em Caixa: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+ 
+#caixa{
+	width: 300px;
+	height: 300px;
+	padding: 8px;
+	margin: 20px;
+	background: #009670;
+	box-shadow: 16px 14px 10px 6px rgba(0, 0, 0, 0.7);
+}
+
+#caixa h1, p{
+	color: rgba(255, 255, 255, 0.9);
+	text-shadow: 6px 4px black;
+	text-shadow: 16px 14px 2px rgba(0, 0, 0, 0.6);
+}
+ ********************************/
+
+
+/* ANIMAÇÕES EM CSS
+********************************
+
+Documentação Animações: https://www.w3schools.com/css/css3_animations.asp
+
+Documentação Direções: https://www.w3schools.com/cssref/css3_pr_animation-direction.asp
+
+@-webkit-keyframes animacao-caixa{
+	from{
+		background: #777;
+	}
+
+	to{
+		background: #b74c88;
+	}
+}
+
+@-moz-keyframes animacao-caixa{
+	from{
+		background: #777;
+	}
+
+	to{
+		background: #b74c88;
+	}
+}
+
+@-o-keyframes animacao-caixa{
+	from{
+		background: #777;
+	}
+
+	to{
+		background: #b74c88;
+	}
+}
+
+@keyframes animacao-caixa{
+	from{
+		background: #385;
+		border-radius: 50%;
+		top: 0;
+		left: 0;
+	}
+
+	to{
+		background: blue;
+		border-radius: 50%;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+#caixa{
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	background: #385;
+	position: relative;
+	border-radius: 50%;
+	-webkit-animation: animacao-caixa 3s 3s 11 alternate;
+	-moz-animation: animacao-caixa 3s 3s 11 alternate;
+	-o-animation: animacao-caixa 3s 3s 11 alternate;
+	animation: animacao-caixa 3s 3s 11 alternate;
+	/animation-name: animacao-caixa;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-iteration-count: 13;
+	animation-direction: alternate;/
+}
+************************************/
+
+/* TRANSIÇÕES
+************************************
+
+Documentação Transições: https://www.w3schools.com/css/css3_transitions.asp
+*/
+
+html{
+	z-index: 1;
+}
+
+p{
+	padding: 0;
+}
+
+#caixa{
+	color: #fff;
+	width: 200px;
+	height:150px;
+	margin: 100px;
+	padding: 10px;
+	line-height: 17px;
+	box-sizing: border-box;
+	background: red;
+}
+
+#caixa:hover{ 
+	width: 345px;
+	height: 245px;
+	background: orange;
+	color: #fff;
+	line-height: 26px;
+	/*-webkit-transition: width 3s, background 2s;
+	-moz-transition: width 3s, background 2s;
+	-o-transition: width 3s, background 2s;
+	transition: all 3s;*/
+	transition: width 0.5s, background 0.5s;
+}
+
