@@ -141,7 +141,7 @@ Documentação Direções: https://www.w3schools.com/cssref/css3_pr_animation-di
 ************************************
 
 Documentação Transições: https://www.w3schools.com/css/css3_transitions.asp
-*/
+
 
 html{
 	z-index: 1;
@@ -168,10 +168,10 @@ p{
 	background: orange;
 	color: #fff;
 	line-height: 26px;
-	/*-webkit-transition: width 3s, background 2s;
+	-webkit-transition: width 3s, background 2s;
 	-moz-transition: width 3s, background 2s;
 	-o-transition: width 3s, background 2s;
-	transition: all 3s;*/
+	transition: all 3s;
 	transition: width 0.5s, background 0.5s;
 }
-
+************************************/
